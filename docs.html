@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docs - BotBuilder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🤖 BotBuilder</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="docs.html">Docs</a>
+    <a href="examples.html">Examples</a>
+  </nav>
+</header>
+<div style="color: white;" class="page">
+  <h2>Scripting Documentation</h2>
+  <p>BotBuilder uses a simple scripting language to automate actions. Each line must end with a <code>|</code> and no indentation is used.</p>
+  <h3>Allowed Triggers</h3>
+  <ul><li><code>OnRun</code></li><li><code>OnMessage</code></li><li><code>UserJoin</code></li><li><code>OnBotMention</code></li></ul>
+  <h3>Allowed Functions</h3>
+  <ul><li><code>on("trigger", Variable) do</code></li><li><code>if &lt;condition&gt; then</code></li><li><code>elseif &lt;condition&gt; then</code></li><li><code>else</code></li><li><code>end</code></li><li><code>return &lt;value&gt;</code></li><li><code>function FuncName(value)</code></li></ul>
+  <h3>Allowed Operations</h3>
+  <ul><li><code>=</code></li><li><code>==</code></li><li><code>+</code></li><li><code>-</code></li><li><code>*</code></li><li><code>/</code></li><li><code>and</code></li><li><code>or</code></li></ul>
+  <h3>Allowed Actions</h3>
+  <ul><li><code>SetRole(User, RoleName)</code></li><li><code>RemoveRole(User, RoleName)</code></li><li><code>Send(Channel, Message)</code></li><li><code>DM(User, Message)</code></li><li><code>Kick(User)</code></li><li><code>Ban(User)</code></li><li><code>Reply(Message, Text)</code></li><li><code>GetChannel(ChannelName)</code></li><li><code>HasRole(User, RoleName)</code></li><li><code>GetUserByName(Name)</code></li><li><code>Delay(seconds)</code></li><li><code>CreateChannel(Name, Category=None)</code></li><li><code>DeleteChannel(Name)</code></li><li><code>CreateCategory(Name)</code></li><li><code>DeleteCategory(Name)</code></li><li><code>Log(Message)</code></li><li><code>Random(min, max)</code></li><li><code>GetGuildName()</code></li><li><code>SetGuildName(Name)</code></li><li><code>React(Message, Emoji)</code></li><li><code>DeleteMessage(Message)</code></li><li><code>EditMessage(Message, NewText)</code></li><li><code>LockChannel(Channel)</code></li><li><code>UnlockChannel(Channel)</code></li><li><code>WaitForMessage(User, Timeout)</code></li><li><code>Mention(User)</code></li><li><code>PinMessage(Message)</code></li><li><code>UnpinMessage(Message)</code></li></ul>
+</div>
+<footer>&copy; 2025 BotBuilder. All rights reserved.</footer>
+</body>
+</html>
