@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examples - BotBuilder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🤖 BotBuilder</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="docs.html">Docs</a>
+    <a href="examples.html">Examples</a>
+  </nav>
+</header>
+<div style="color: white;" class="page">
+  <h2>Script Examples</h2>
+  <h3>Auto Role on Join</h3>
+  <pre style="background-color: #2c3e50;"><code>on("UserJoin", User) do|
+SetRole(user, "Role Name")|
+end
+</code></pre>
+  <h3>Respond to Mention</h3>
+  <pre style="background-color: #2c3e50;"><code>on("OnBotMention", Message) do|
+Reply(Message, "Hello there! Need help? Type /help")|
+end
+</code></pre>
+  <h3>Random Event</h3>
+  <pre style="background-color: #2c3e50;"><code>on("OnMessage", Message) do|
+if Random(1, 10) == 1 then|
+Send("general", "message!")|
+end|
+end
+</code></pre>
+  <h3>Slash Command Greeting</h3>
+  <pre style="background-color: #2c3e50;"><code>on("OnMessage", Message) do|
+if Message == "!Command" then|
+Send("general", "Hello!")|
+end|
+end
+</code></pre>
+</div>
+<footer>&copy; 2025 BotBuilder. All rights reserved.</footer>
+</body>
+</html>
